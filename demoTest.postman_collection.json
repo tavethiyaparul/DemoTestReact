@@ -1,0 +1,320 @@
+{
+	"info": {
+		"_postman_id": "1dfa1893-c513-4c4c-8a5f-2f736d667620",
+		"name": "demoTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getdata",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/emp",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"emp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getdata id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/emp/625e9561f7b458c061b12314",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"emp",
+						"625e9561f7b458c061b12314"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/emp/625e9001e3ee4d98edd4cc60",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"emp",
+						"625e9001e3ee4d98edd4cc60"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"name\": \"rishiva\",\r\n            \"address\": \"haridham \",\r\n            \"post\": \"employee\",\r\n            \"salary\": 300000,\r\n            \"phoneNo\": 9825555431,\r\n            \"gender\": \"female\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/emp/625e903f38f79d2e8759837b",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"emp",
+						"625e903f38f79d2e8759837b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"empName\": \"rani\",\r\n            \"address\": \"Ram soc\",\r\n            \"post\": \"manager\",\r\n            \"salary\": 100000,\r\n            \"phoneNo\": 9235565241,\r\n            \"gender\": \"male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/emp",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"emp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/emp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"abc\",\r\n    \"address\":\"haridham soc\",\r\n    \"post\":\"manager\",\r\n    \"salary\":10000,\r\n    \"phoneNo\":9825565241,\r\n    \"gender\":\"male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/emp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"emp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://b1e4-171-50-244-137.ngrok.io/dev/webhook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"url\": \"https://b1e4-171-50-244-137.ngrok.io/dev/webhook\",\r\n  \"description\": \"Payment Success\",\r\n  \"enabled_events\": [\r\n    \"payment_intent.succeeded\"\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://b1e4-171-50-244-137.ngrok.io/dev/webhook",
+					"protocol": "https",
+					"host": [
+						"b1e4-171-50-244-137",
+						"ngrok",
+						"io"
+					],
+					"path": [
+						"dev",
+						"webhook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/dev/send",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"test\",\r\n    \"body\":\"hello\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/dev/send",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/dev/send ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titel\":\"abc\",\r\n    \"body\":\"Welcome to \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/dev/send ",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"send "
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/dev/send",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      registrationToken: \"dsafqweqw2131saf\",\r\n        notification: \"hello\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/dev/send",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:3000/dev/redeem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"test8\",\r\n    \"redeemAmount\":\"10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/dev/redeem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"redeem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/dev/redeem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":\"e2754482-c9eb-4663-bec9-5a4ebc996c8f\",\r\n    \"redeemAmount\":10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/dev/redeem",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"redeem"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
