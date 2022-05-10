@@ -1,0 +1,22 @@
+.main{
+    width:'100%';
+    background-color: white;
+    
+}
+.menu{
+    height: 50px;
+    border:1px solid red;
+    background-color: white;
+    text-align: center;
+}
+h2{
+    color: blue;
+   align-self: center;
+}
+
+.second{
+    background-color: aqua;
+    height:100px     ;
+    width: 100px;
+    border: 1px solid red;
+   }
